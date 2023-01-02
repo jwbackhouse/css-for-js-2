@@ -44,3 +44,40 @@
   position: fixed;
   bottom: 0;
 }
+
+@media (max-width: 768px) {
+  .maxWidthWrapper {
+    isolation: unset;
+  }
+
+  .characterWrapper {
+    position: relative;
+    top: -100px;
+    left: 0px;
+    width: 100%;
+    margin: auto;
+  }
+
+  .controlColumn {
+    position: relative;
+    top: 500px;
+    overflow-x: auto;
+    white-space: nowrap;
+    width: 100%;
+    z-index: 1;
+  }
+
+  .controlColumn > div {
+    display: inline-block;
+    max-width: 300px;
+    margin-right: 40px;
+  }
+
+  .header {
+    width: 100%;
+  }
+
+  .perspective {
+    display: none;
+  }
+}
